@@ -55,7 +55,7 @@
 										<h2 class="major">About Me</h2>
 										<p>Highly effective Systems Analyst bringing forth a wealth of experience analysing,
 											managing and testing business process solutions related to Life Insurance, Financial Reporting and Reinsurance. 
-											Adept in performing data analytics and fascilitating testing design and execution.</p>
+											Adept in performing data analytics and fasilitating testing design and execution.</p>
 									</div>
 								</div>
 							</section>
@@ -84,10 +84,11 @@
 									<div class="content">
 										<h2 class="major">Education</h2>
 										<ul class="contact">
-											<li>+27 81 343 9321</li>
-											<li>bulelani.mjali@gmail.com</li>
-											<li>Bulelani Mjalil</li>
-											<li>Bulelani Mjali</li>
+											<li><em>University of South Africa: 2020 - 2023</em><br/>Advanced Diploma in Information Resource Management</li>
+											<li><em>Nelson Mandela Metropolitan University: 2012 - 2014</em><br/>National Diploma in Software Development</li>
+											<li><em>Nelson Mandela Metropolitan University: 2011</em><br/>Higher Certificate in User Support Services</li>
+											<li><em>Cisco: 2012</em><br />CCNA Exploration: Network Fundamentals</li>
+											<li><em>Cisco: 2012</em><br />IT Essentials: PC Hardware and Software</li>
 										</ul>
 									</div>
 								</div>
@@ -138,7 +139,6 @@
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
-						
 							<ul class="contact">
 								<li class="icon solid fa-phone">+27 81 343 9321</li><li class="icon solid fa-envelope">bulelani.mjali@gmail.com</li>
 								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/bulelani-mjali-4a62922b/">Bulelani Mjalil</a></li>
@@ -147,6 +147,7 @@
 							<ul class="copyright">
 								<li>&copy; Coherent Solutions. All rights reserved.</li>
 							</ul>
+							
 						</div>
 					</section>
 
@@ -159,6 +160,22 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
+			<script>
+				function sendEmail(){
+					Email.send({
+						Host : "smtp.gmail.com",
+						Username : "ematafileni@gmail.com",
+						Password : "ematafileni1234",
+						To : 'bulelani.mjali@gmail.com',
+						From : document.getElementById("email").value,
+						Subject : "Contact From Portforlio Page",
+						Body : document.getElementById("message").value
+					}).then(
+						message => alert(message)
+					);
+				}
+			</script>
+			
 	</body>
 </html>
